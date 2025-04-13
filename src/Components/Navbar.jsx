@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
+import logo from '../assets/logo_-removebg-preview.png'
 
 const Navbar = () => {
   return (
@@ -42,7 +43,7 @@ const Navbar = () => {
           </div>
           <div className="navbar-center ml-4">
             <img
-              src="/src/assets/logo_-removebg-preview.png"
+              src={logo}
               alt=""
               width={90}
             />

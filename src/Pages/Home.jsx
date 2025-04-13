@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../Components/Button";
 import { useNavigate } from "react-router-dom";
+import png from '../assets/diceimg.png'
 
 const Home = () => {
   let navigate = useNavigate();
@@ -11,7 +12,7 @@ const Home = () => {
         {/* Dice Image */}
         <div className="w-full md:w-1/2 flex justify-center">
           <img
-            src="/src/assets/diceimg.png"
+            src={png}
             alt="Dice"
             className="w-72 md:w-[500px] drop-shadow-lg"
           />
