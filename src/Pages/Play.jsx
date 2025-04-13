@@ -3,6 +3,17 @@ import SelectedNumber from "../Components/SelectedNumber";
 import Button from "../Components/Button";
 import { useNavigate } from "react-router-dom";
 
+// Import dice images
+import dice1 from "../assets/dice_1.png";
+import dice2 from "../assets/dice_2.png";
+import dice3 from "../assets/dice_3.png";
+import dice4 from "../assets/dice_4.png";
+import dice5 from "../assets/dice_5.png";
+import dice6 from "../assets/dice_6.png";
+
+// Store dice images in an array
+const diceImages = [dice1, dice2, dice3, dice4, dice5, dice6];
+
 const Play = () => {
   const [score, setScore] = useState(0);
   const [diceValue, setDiceValue] = useState(1);
@@ -64,8 +75,8 @@ const Play = () => {
             className="cursor-pointer transition-transform duration-300 hover:scale-110"
           >
             <img
-              src={`/src/assets/dice_${diceValue}.png`}
-              alt="dice"
+              src={diceImages[diceValue - 1]}
+              alt={`dice_${diceValue}`}
               className="w-48 h-48 animate-pulse hover:animate-none"
             />
           </div>
