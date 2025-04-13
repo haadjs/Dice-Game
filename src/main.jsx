@@ -3,7 +3,6 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import Layout from "./Layout";
 import Home from "./Pages/Home";
-import About from "./Pages/About";
 import Rule from "./Pages/Rule";
 import Play from "./Pages/Play";
 
