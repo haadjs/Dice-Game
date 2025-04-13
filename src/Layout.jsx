@@ -1,14 +1,17 @@
-import React from 'react'
-import { Outlet } from 'react-router'
-import Navbar from './Components/Navbar'
+import React from "react";
+import { Outlet, useLocation } from "react-router";
+import Navbar from "./Components/Navbar";
 
 const Layout = () => {
+  let locaton = useLocation();
+  let hideNavbar = locaton.pathname == "/play";
+
   return (
     <>
-     <Navbar />
+      {!hideNavbar && <Navbar />}
       <Outlet />
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

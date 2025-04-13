@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react";
 
-const Button = ({ navigate, title, className = '', to, ...rest }) => {
+const Button = ({ navigate, title, className = "", to, ...rest }) => {
   const handleClick = () => {
     if (to) {
-      navigate(to); // Navigate to the provided 'to' path
+      navigate(to);
     }
   };
 
   return (
     <button
-      onClick={handleClick} // Trigger navigate on click
+      onClick={handleClick}
       className={`btn text-white bg-black px-4 py-1 rounded-md ${className}`}
       {...rest}
     >
